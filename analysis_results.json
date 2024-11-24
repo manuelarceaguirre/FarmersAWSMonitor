@@ -1,0 +1,1471 @@
+{
+    "dataset_analysis": {
+        "categorical_columns": [
+            "Occupation",
+            "Credit_Mix",
+            "Payment_of_Min_Amount",
+            "Payment_Behaviour",
+            "Last_Loan_9",
+            "Last_Loan_8",
+            "Last_Loan_7",
+            "Last_Loan_6",
+            "Last_Loan_5",
+            "Last_Loan_4",
+            "Last_Loan_3",
+            "Last_Loan_2",
+            "Last_Loan_1"
+        ],
+        "numerical_columns": [
+            "Age",
+            "Annual_Income",
+            "Monthly_Inhand_Salary",
+            "Num_Bank_Accounts",
+            "Num_Credit_Card",
+            "Interest_Rate",
+            "Num_of_Loan",
+            "Delay_from_due_date",
+            "Num_of_Delayed_Payment",
+            "Changed_Credit_Limit",
+            "Num_Credit_Inquiries",
+            "Outstanding_Debt",
+            "Credit_Utilization_Ratio",
+            "Credit_History_Age",
+            "Total_EMI_per_month",
+            "Amount_invested_monthly",
+            "Monthly_Balance"
+        ],
+        "total_columns": 32,
+        "total_rows": 100000,
+        "reference_size": 100000,
+        "current_size": 100000
+    },
+    "target_analysis": {
+        "target": "Credit_Score",
+        "type": "classification"
+    },
+    "feature_analysis": {
+        "Age": {
+            "type": "numerical",
+            "unique_values": 43,
+            "missing_values": 0,
+            "cardinality": 0.00043,
+            "mean": 33.30924,
+            "std": 10.764995563106133,
+            "min": 14.0,
+            "max": 56.0
+        },
+        "Occupation": {
+            "type": "categorical",
+            "unique_values": 15,
+            "missing_values": 0,
+            "cardinality": 0.00015
+        },
+        "Annual_Income": {
+            "type": "numerical",
+            "unique_values": 12488,
+            "missing_values": 0,
+            "cardinality": 0.12488,
+            "mean": 50505.123448800005,
+            "std": 38299.42209253823,
+            "min": 7005.93,
+            "max": 179987.28
+        },
+        "Monthly_Inhand_Salary": {
+            "type": "numerical",
+            "unique_values": 13233,
+            "missing_values": 0,
+            "cardinality": 0.13233,
+            "mean": 4198.7718591652965,
+            "std": 3187.4943450887263,
+            "min": 303.6454167,
+            "max": 15204.63333
+        },
+        "Num_Bank_Accounts": {
+            "type": "numerical",
+            "unique_values": 12,
+            "missing_values": 0,
+            "cardinality": 0.00012,
+            "mean": 5.3688,
+            "std": 2.5932785833647163,
+            "min": 0.0,
+            "max": 11.0
+        },
+        "Num_Credit_Card": {
+            "type": "numerical",
+            "unique_values": 12,
+            "missing_values": 0,
+            "cardinality": 0.00012,
+            "mean": 5.53364,
+            "std": 2.067073070384979,
+            "min": 0.0,
+            "max": 11.0
+        },
+        "Interest_Rate": {
+            "type": "numerical",
+            "unique_values": 34,
+            "missing_values": 0,
+            "cardinality": 0.00034,
+            "mean": 14.53208,
+            "std": 8.74133027531564,
+            "min": 1.0,
+            "max": 34.0
+        },
+        "Num_of_Loan": {
+            "type": "numerical",
+            "unique_values": 10,
+            "missing_values": 0,
+            "cardinality": 0.0001,
+            "mean": 3.53288,
+            "std": 2.44635621939805,
+            "min": 0.0,
+            "max": 9.0
+        },
+        "Delay_from_due_date": {
+            "type": "numerical",
+            "unique_values": 73,
+            "missing_values": 0,
+            "cardinality": 0.00073,
+            "mean": 21.06878,
+            "std": 14.860104223678087,
+            "min": -5.0,
+            "max": 67.0
+        },
+        "Num_of_Delayed_Payment": {
+            "type": "numerical",
+            "unique_values": 29,
+            "missing_values": 0,
+            "cardinality": 0.00029,
+            "mean": 13.32924,
+            "std": 6.269066440415219,
+            "min": 0.0,
+            "max": 28.0
+        },
+        "Changed_Credit_Limit": {
+            "type": "numerical",
+            "unique_values": 3634,
+            "missing_values": 0,
+            "cardinality": 0.03634,
+            "mean": 10.3890982,
+            "std": 6.783550067646877,
+            "min": -6.49,
+            "max": 36.97
+        },
+        "Num_Credit_Inquiries": {
+            "type": "numerical",
+            "unique_values": 18,
+            "missing_values": 0,
+            "cardinality": 0.00018,
+            "mean": 5.77282,
+            "std": 3.8611369221232383,
+            "min": 0.0,
+            "max": 17.0
+        },
+        "Credit_Mix": {
+            "type": "categorical",
+            "unique_values": 3,
+            "missing_values": 0,
+            "cardinality": 3e-05
+        },
+        "Outstanding_Debt": {
+            "type": "numerical",
+            "unique_values": 12203,
+            "missing_values": 0,
+            "cardinality": 0.12203,
+            "mean": 1426.2203759999995,
+            "std": 1155.1290257464575,
+            "min": 0.23,
+            "max": 4998.07
+        },
+        "Credit_Utilization_Ratio": {
+            "type": "numerical",
+            "unique_values": 99998,
+            "missing_values": 0,
+            "cardinality": 0.99998,
+            "mean": 32.28517251894021,
+            "std": 5.116875070147291,
+            "min": 20.0,
+            "max": 50.0
+        },
+        "Credit_History_Age": {
+            "type": "numerical",
+            "unique_values": 404,
+            "missing_values": 0,
+            "cardinality": 0.00404,
+            "mean": 221.20688,
+            "std": 99.6811119716591,
+            "min": 1.0,
+            "max": 404.0
+        },
+        "Payment_of_Min_Amount": {
+            "type": "categorical",
+            "unique_values": 2,
+            "missing_values": 0,
+            "cardinality": 2e-05
+        },
+        "Total_EMI_per_month": {
+            "type": "numerical",
+            "unique_values": 11283,
+            "missing_values": 0,
+            "cardinality": 0.11283,
+            "mean": 88.2094502678743,
+            "std": 83.24470343162929,
+            "min": -1.0,
+            "max": 357.4060675
+        },
+        "Amount_invested_monthly": {
+            "type": "numerical",
+            "unique_values": 92646,
+            "missing_values": 0,
+            "cardinality": 0.92646,
+            "mean": 193.68634737766615,
+            "std": 194.78522207083392,
+            "min": 0.0,
+            "max": 1977.326102
+        },
+        "Payment_Behaviour": {
+            "type": "categorical",
+            "unique_values": 6,
+            "missing_values": 0,
+            "cardinality": 6e-05
+        },
+        "Monthly_Balance": {
+            "type": "numerical",
+            "unique_values": 98954,
+            "missing_values": 0,
+            "cardinality": 0.98954,
+            "mean": 403.4923926237023,
+            "std": 214.4230086155874,
+            "min": 0.007759665,
+            "max": 1602.040519
+        },
+        "Last_Loan_9": {
+            "type": "categorical",
+            "unique_values": 10,
+            "missing_values": 0,
+            "cardinality": 0.0001
+        },
+        "Last_Loan_8": {
+            "type": "categorical",
+            "unique_values": 10,
+            "missing_values": 0,
+            "cardinality": 0.0001
+        },
+        "Last_Loan_7": {
+            "type": "categorical",
+            "unique_values": 10,
+            "missing_values": 0,
+            "cardinality": 0.0001
+        },
+        "Last_Loan_6": {
+            "type": "categorical",
+            "unique_values": 10,
+            "missing_values": 0,
+            "cardinality": 0.0001
+        },
+        "Last_Loan_5": {
+            "type": "categorical",
+            "unique_values": 10,
+            "missing_values": 0,
+            "cardinality": 0.0001
+        },
+        "Last_Loan_4": {
+            "type": "categorical",
+            "unique_values": 10,
+            "missing_values": 0,
+            "cardinality": 0.0001
+        },
+        "Last_Loan_3": {
+            "type": "categorical",
+            "unique_values": 10,
+            "missing_values": 0,
+            "cardinality": 0.0001
+        },
+        "Last_Loan_2": {
+            "type": "categorical",
+            "unique_values": 10,
+            "missing_values": 0,
+            "cardinality": 0.0001
+        },
+        "Last_Loan_1": {
+            "type": "categorical",
+            "unique_values": 10,
+            "missing_values": 0,
+            "cardinality": 0.0001
+        }
+    },
+    "feature_importance": null,
+    "drift_results": {
+        "Occupation": {
+            "drift_score": 0.015162027196796872,
+            "type": "categorical",
+            "tests": [
+                "chisquare"
+            ]
+        },
+        "Credit_Mix": {
+            "drift_score": 0.00025161595066542714,
+            "type": "categorical",
+            "tests": [
+                "chisquare"
+            ]
+        },
+        "Payment_of_Min_Amount": {
+            "drift_score": 0.0010365584394004367,
+            "type": "categorical",
+            "tests": [
+                "chisquare"
+            ]
+        },
+        "Payment_Behaviour": {
+            "drift_score": 0.18045830975039473,
+            "type": "categorical",
+            "tests": [
+                "chisquare"
+            ]
+        },
+        "Last_Loan_9": {
+            "drift_score": 0.008809572897609898,
+            "type": "categorical",
+            "tests": [
+                "chisquare"
+            ]
+        },
+        "Last_Loan_8": {
+            "drift_score": 0.013043987001750468,
+            "type": "categorical",
+            "tests": [
+                "chisquare"
+            ]
+        },
+        "Last_Loan_7": {
+            "drift_score": 0.017142770468328905,
+            "type": "categorical",
+            "tests": [
+                "chisquare"
+            ]
+        },
+        "Last_Loan_6": {
+            "drift_score": 0.010983775325632527,
+            "type": "categorical",
+            "tests": [
+                "chisquare"
+            ]
+        },
+        "Last_Loan_5": {
+            "drift_score": 0.0123195252427672,
+            "type": "categorical",
+            "tests": [
+                "chisquare"
+            ]
+        },
+        "Last_Loan_4": {
+            "drift_score": 0.01532083374272591,
+            "type": "categorical",
+            "tests": [
+                "chisquare"
+            ]
+        },
+        "Last_Loan_3": {
+            "drift_score": 0.34550126414755394,
+            "type": "categorical",
+            "tests": [
+                "chisquare"
+            ]
+        },
+        "Last_Loan_2": {
+            "drift_score": 0.17957397713366946,
+            "type": "categorical",
+            "tests": [
+                "chisquare"
+            ]
+        },
+        "Last_Loan_1": {
+            "drift_score": 0.024616184530802162,
+            "type": "categorical",
+            "tests": [
+                "chisquare"
+            ]
+        }
+    },
+    "statistical_tests": {
+        "numerical_tests": {
+            "Age": {
+                "ks_test": {
+                    "statistic": 0.06537000000000001,
+                    "p_value": 3.3262017627478337e-186,
+                    "significant": true
+                },
+                "basic_stats": {
+                    "reference": {
+                        "mean": 33.30924,
+                        "std": 10.764995563106133,
+                        "min": 14.0,
+                        "max": 56.0,
+                        "median": 33.0
+                    },
+                    "current": {
+                        "mean": 33.3619584,
+                        "std": 10.731367499305646,
+                        "min": -11.7,
+                        "max": 80.25,
+                        "median": 33.35
+                    }
+                }
+            },
+            "Annual_Income": {
+                "ks_test": {
+                    "statistic": 0.14238999999999996,
+                    "p_value": 0.0,
+                    "significant": true
+                },
+                "basic_stats": {
+                    "reference": {
+                        "mean": 50505.123448800005,
+                        "std": 38299.42209253823,
+                        "min": 7005.93,
+                        "max": 179987.28,
+                        "median": 36999.705
+                    },
+                    "current": {
+                        "mean": 50494.35839880001,
+                        "std": 38295.58606103593,
+                        "min": -109968.29,
+                        "max": 212521.33,
+                        "median": 50393.015
+                    }
+                }
+            },
+            "Monthly_Inhand_Salary": {
+                "ks_test": {
+                    "statistic": 0.14050999999999997,
+                    "p_value": 0.0,
+                    "significant": true
+                },
+                "basic_stats": {
+                    "reference": {
+                        "mean": 4198.7718591652965,
+                        "std": 3187.4943450887263,
+                        "min": 303.6454167,
+                        "max": 15204.63333,
+                        "median": 3096.378333
+                    },
+                    "current": {
+                        "mean": 4188.2342766,
+                        "std": 3190.266077340794,
+                        "min": -10562.86,
+                        "max": 17659.95,
+                        "median": 4196.845
+                    }
+                }
+            },
+            "Num_Bank_Accounts": {
+                "ks_test": {
+                    "statistic": 0.10126999999999997,
+                    "p_value": 0.0,
+                    "significant": true
+                },
+                "basic_stats": {
+                    "reference": {
+                        "mean": 5.3688,
+                        "std": 2.5932785833647163,
+                        "min": 0.0,
+                        "max": 11.0,
+                        "median": 5.0
+                    },
+                    "current": {
+                        "mean": 5.3766017,
+                        "std": 2.5866546097957905,
+                        "min": -6.1,
+                        "max": 17.42,
+                        "median": 5.37
+                    }
+                }
+            },
+            "Num_Credit_Card": {
+                "ks_test": {
+                    "statistic": 0.11331000000000002,
+                    "p_value": 0.0,
+                    "significant": true
+                },
+                "basic_stats": {
+                    "reference": {
+                        "mean": 5.53364,
+                        "std": 2.067073070384979,
+                        "min": 0.0,
+                        "max": 11.0,
+                        "median": 5.0
+                    },
+                    "current": {
+                        "mean": 5.5348473,
+                        "std": 2.065853818207545,
+                        "min": -3.46,
+                        "max": 15.06,
+                        "median": 5.53
+                    }
+                }
+            },
+            "Interest_Rate": {
+                "ks_test": {
+                    "statistic": 0.10097,
+                    "p_value": 0.0,
+                    "significant": true
+                },
+                "basic_stats": {
+                    "reference": {
+                        "mean": 14.53208,
+                        "std": 8.74133027531564,
+                        "min": 1.0,
+                        "max": 34.0,
+                        "median": 13.0
+                    },
+                    "current": {
+                        "mean": 14.5730877,
+                        "std": 8.730843567915004,
+                        "min": -23.86,
+                        "max": 54.63,
+                        "median": 14.58
+                    }
+                }
+            },
+            "Num_of_Loan": {
+                "ks_test": {
+                    "statistic": 0.12462000000000001,
+                    "p_value": 0.0,
+                    "significant": true
+                },
+                "basic_stats": {
+                    "reference": {
+                        "mean": 3.53288,
+                        "std": 2.44635621939805,
+                        "min": 0.0,
+                        "max": 9.0,
+                        "median": 3.0
+                    },
+                    "current": {
+                        "mean": 3.5250086,
+                        "std": 2.4531781954759477,
+                        "min": -7.02,
+                        "max": 13.62,
+                        "median": 3.53
+                    }
+                }
+            },
+            "Delay_from_due_date": {
+                "ks_test": {
+                    "statistic": 0.09455999999999998,
+                    "p_value": 0.0,
+                    "significant": true
+                },
+                "basic_stats": {
+                    "reference": {
+                        "mean": 21.06878,
+                        "std": 14.860104223678087,
+                        "min": -5.0,
+                        "max": 67.0,
+                        "median": 18.0
+                    },
+                    "current": {
+                        "mean": 20.9873241,
+                        "std": 14.827287942076136,
+                        "min": -43.73,
+                        "max": 86.37,
+                        "median": 20.97
+                    }
+                }
+            },
+            "Num_of_Delayed_Payment": {
+                "ks_test": {
+                    "statistic": 0.07061000000000006,
+                    "p_value": 3.2482092779316594e-217,
+                    "significant": true
+                },
+                "basic_stats": {
+                    "reference": {
+                        "mean": 13.32924,
+                        "std": 6.269066440415219,
+                        "min": 0.0,
+                        "max": 28.0,
+                        "median": 14.0
+                    },
+                    "current": {
+                        "mean": 13.3826809,
+                        "std": 6.235248305640242,
+                        "min": -12.31,
+                        "max": 39.49,
+                        "median": 13.38
+                    }
+                }
+            },
+            "Changed_Credit_Limit": {
+                "ks_test": {
+                    "statistic": 0.06884000000000001,
+                    "p_value": 1.7984800402698815e-206,
+                    "significant": true
+                },
+                "basic_stats": {
+                    "reference": {
+                        "mean": 10.3890982,
+                        "std": 6.783550067646877,
+                        "min": -6.49,
+                        "max": 36.97,
+                        "median": 9.4
+                    },
+                    "current": {
+                        "mean": 10.356566899999999,
+                        "std": 6.774740200765802,
+                        "min": -17.94,
+                        "max": 38.04,
+                        "median": 10.33
+                    }
+                }
+            },
+            "Num_Credit_Inquiries": {
+                "ks_test": {
+                    "statistic": 0.12129000000000001,
+                    "p_value": 0.0,
+                    "significant": true
+                },
+                "basic_stats": {
+                    "reference": {
+                        "mean": 5.77282,
+                        "std": 3.8611369221232383,
+                        "min": 0.0,
+                        "max": 17.0,
+                        "median": 5.0
+                    },
+                    "current": {
+                        "mean": 5.766415800000001,
+                        "std": 3.8540012354390325,
+                        "min": -9.82,
+                        "max": 23.01,
+                        "median": 5.76
+                    }
+                }
+            },
+            "Outstanding_Debt": {
+                "ks_test": {
+                    "statistic": 0.15727999999999998,
+                    "p_value": 0.0,
+                    "significant": true
+                },
+                "basic_stats": {
+                    "reference": {
+                        "mean": 1426.2203759999995,
+                        "std": 1155.1290257464575,
+                        "min": 0.23,
+                        "max": 4998.07,
+                        "median": 1166.155
+                    },
+                    "current": {
+                        "mean": 1425.3065829,
+                        "std": 1155.6333134696413,
+                        "min": -3570.66,
+                        "max": 6389.97,
+                        "median": 1425.82
+                    }
+                }
+            },
+            "Credit_Utilization_Ratio": {
+                "ks_test": {
+                    "statistic": 0.04920000000000002,
+                    "p_value": 1.269285758878255e-105,
+                    "significant": true
+                },
+                "basic_stats": {
+                    "reference": {
+                        "mean": 32.28517251894021,
+                        "std": 5.116875070147291,
+                        "min": 20.0,
+                        "max": 50.0,
+                        "median": 32.30578367
+                    },
+                    "current": {
+                        "mean": 32.2619093,
+                        "std": 5.133026865819188,
+                        "min": 8.02,
+                        "max": 55.6,
+                        "median": 32.29
+                    }
+                }
+            },
+            "Credit_History_Age": {
+                "ks_test": {
+                    "statistic": 0.04779,
+                    "p_value": 1.1204597417741616e-99,
+                    "significant": true
+                },
+                "basic_stats": {
+                    "reference": {
+                        "mean": 221.20688,
+                        "std": 99.6811119716591,
+                        "min": 1.0,
+                        "max": 404.0,
+                        "median": 219.0
+                    },
+                    "current": {
+                        "mean": 220.99824869999998,
+                        "std": 99.73687764117926,
+                        "min": -273.56,
+                        "max": 658.75,
+                        "median": 220.73
+                    }
+                }
+            },
+            "Total_EMI_per_month": {
+                "ks_test": {
+                    "statistic": 0.14425000000000002,
+                    "p_value": 0.0,
+                    "significant": true
+                },
+                "basic_stats": {
+                    "reference": {
+                        "mean": 88.2094502678743,
+                        "std": 83.24470343162929,
+                        "min": -1.0,
+                        "max": 357.4060675,
+                        "median": 61.54129633
+                    },
+                    "current": {
+                        "mean": 88.4178508,
+                        "std": 83.18363123054911,
+                        "min": -295.54,
+                        "max": 460.56,
+                        "median": 88.25
+                    }
+                }
+            },
+            "Amount_invested_monthly": {
+                "ks_test": {
+                    "statistic": 0.1804,
+                    "p_value": 0.0,
+                    "significant": true
+                },
+                "basic_stats": {
+                    "reference": {
+                        "mean": 193.68634737766615,
+                        "std": 194.78522207083392,
+                        "min": 0.0,
+                        "max": 1977.326102,
+                        "median": 129.3618385
+                    },
+                    "current": {
+                        "mean": 193.0168756,
+                        "std": 194.4823400265843,
+                        "min": -652.12,
+                        "max": 1006.18,
+                        "median": 193.39499999999998
+                    }
+                }
+            },
+            "Monthly_Balance": {
+                "ks_test": {
+                    "statistic": 0.15177000000000002,
+                    "p_value": 0.0,
+                    "significant": true
+                },
+                "basic_stats": {
+                    "reference": {
+                        "mean": 403.4923926237023,
+                        "std": 214.4230086155874,
+                        "min": 0.007759665,
+                        "max": 1602.040519,
+                        "median": 337.27098455
+                    },
+                    "current": {
+                        "mean": 403.4992698999999,
+                        "std": 214.9186475971613,
+                        "min": -485.08,
+                        "max": 1383.88,
+                        "median": 403.34000000000003
+                    }
+                }
+            },
+            "Occupation": {
+                "distribution_test": {
+                    "statistic": 186.40451147457784,
+                    "p_value": 0.0,
+                    "degrees_of_freedom": 14,
+                    "significant": true
+                }
+            },
+            "Credit_Mix": {
+                "distribution_test": {
+                    "statistic": 0.05065254056688495,
+                    "p_value": 0.9749917492932363,
+                    "degrees_of_freedom": 2,
+                    "significant": false
+                }
+            },
+            "Payment_of_Min_Amount": {
+                "distribution_test": {
+                    "statistic": 0.8600447345366724,
+                    "p_value": 0.3537261732418837,
+                    "degrees_of_freedom": 1,
+                    "significant": false
+                }
+            },
+            "Payment_Behaviour": {
+                "distribution_test": {
+                    "statistic": 27895.23777533794,
+                    "p_value": 0.0,
+                    "degrees_of_freedom": 5,
+                    "significant": true
+                }
+            },
+            "Last_Loan_9": {
+                "distribution_test": {
+                    "statistic": 66.36323698711577,
+                    "p_value": 7.829026316130694e-11,
+                    "degrees_of_freedom": 9,
+                    "significant": true
+                }
+            },
+            "Last_Loan_8": {
+                "distribution_test": {
+                    "statistic": 133.1399845670349,
+                    "p_value": 0.0,
+                    "degrees_of_freedom": 9,
+                    "significant": true
+                }
+            },
+            "Last_Loan_7": {
+                "distribution_test": {
+                    "statistic": 221.02399836165023,
+                    "p_value": 0.0,
+                    "degrees_of_freedom": 9,
+                    "significant": true
+                }
+            },
+            "Last_Loan_6": {
+                "distribution_test": {
+                    "statistic": 98.58450297363075,
+                    "p_value": 0.0,
+                    "degrees_of_freedom": 9,
+                    "significant": true
+                }
+            },
+            "Last_Loan_5": {
+                "distribution_test": {
+                    "statistic": 121.2576899996135,
+                    "p_value": 0.0,
+                    "degrees_of_freedom": 9,
+                    "significant": true
+                }
+            },
+            "Last_Loan_4": {
+                "distribution_test": {
+                    "statistic": 188.33456321676067,
+                    "p_value": 0.0,
+                    "degrees_of_freedom": 9,
+                    "significant": true
+                }
+            },
+            "Last_Loan_3": {
+                "distribution_test": {
+                    "statistic": 167032.2977055014,
+                    "p_value": 0.0,
+                    "degrees_of_freedom": 9,
+                    "significant": true
+                }
+            },
+            "Last_Loan_2": {
+                "distribution_test": {
+                    "statistic": 30865.471578921963,
+                    "p_value": 0.0,
+                    "degrees_of_freedom": 9,
+                    "significant": true
+                }
+            },
+            "Last_Loan_1": {
+                "distribution_test": {
+                    "statistic": 487.8036285064859,
+                    "p_value": 0.0,
+                    "degrees_of_freedom": 9,
+                    "significant": true
+                }
+            }
+        },
+        "correlation_changes": {
+            "Age_vs_Num_Bank_Accounts": {
+                "reference_correlation": -0.19037686115988564,
+                "current_correlation": 0.005149309409541471,
+                "absolute_change": 0.19552617056942712
+            },
+            "Age_vs_Num_Credit_Card": {
+                "reference_correlation": -0.14851074347747453,
+                "current_correlation": -0.003129936377476267,
+                "absolute_change": 0.14538080709999826
+            },
+            "Age_vs_Interest_Rate": {
+                "reference_correlation": -0.21751936337898686,
+                "current_correlation": -0.001273635678017911,
+                "absolute_change": 0.21624572770096895
+            },
+            "Age_vs_Num_of_Loan": {
+                "reference_correlation": -0.21351589458736805,
+                "current_correlation": -0.0028507601461568825,
+                "absolute_change": 0.21066513444121118
+            },
+            "Age_vs_Delay_from_due_date": {
+                "reference_correlation": -0.1741320239550309,
+                "current_correlation": -0.0004526740475883802,
+                "absolute_change": 0.17367934990744252
+            },
+            "Age_vs_Num_of_Delayed_Payment": {
+                "reference_correlation": -0.18429157880472524,
+                "current_correlation": 0.0017032322495269454,
+                "absolute_change": 0.1859948110542522
+            },
+            "Age_vs_Changed_Credit_Limit": {
+                "reference_correlation": -0.15662062436953228,
+                "current_correlation": -0.0003235101983684031,
+                "absolute_change": 0.15629711417116388
+            },
+            "Age_vs_Num_Credit_Inquiries": {
+                "reference_correlation": -0.2509298829307974,
+                "current_correlation": 0.0019006012161555815,
+                "absolute_change": 0.25283048414695297
+            },
+            "Age_vs_Outstanding_Debt": {
+                "reference_correlation": -0.20236671797494557,
+                "current_correlation": -0.0013916141353657765,
+                "absolute_change": 0.20097510383957978
+            },
+            "Age_vs_Credit_History_Age": {
+                "reference_correlation": 0.23462238227180202,
+                "current_correlation": 0.0040170519086363925,
+                "absolute_change": 0.23060533036316563
+            },
+            "Age_vs_Monthly_Balance": {
+                "reference_correlation": 0.11659157630371715,
+                "current_correlation": 0.001597080472607673,
+                "absolute_change": 0.11499449583110948
+            },
+            "Annual_Income_vs_Monthly_Inhand_Salary": {
+                "reference_correlation": 0.998201298263056,
+                "current_correlation": 0.0007983117118056734,
+                "absolute_change": 0.9974029865512504
+            },
+            "Annual_Income_vs_Num_Bank_Accounts": {
+                "reference_correlation": -0.2840476174611313,
+                "current_correlation": 0.005358921075808745,
+                "absolute_change": 0.28940653853694004
+            },
+            "Annual_Income_vs_Num_Credit_Card": {
+                "reference_correlation": -0.2178769416212348,
+                "current_correlation": -0.00033790502850365923,
+                "absolute_change": 0.21753903659273113
+            },
+            "Annual_Income_vs_Interest_Rate": {
+                "reference_correlation": -0.3023524357482581,
+                "current_correlation": -0.0015935451665932264,
+                "absolute_change": 0.3007588905816649
+            },
+            "Annual_Income_vs_Num_of_Loan": {
+                "reference_correlation": -0.255559600343423,
+                "current_correlation": -0.00012404712168151443,
+                "absolute_change": 0.2554355532217415
+            },
+            "Annual_Income_vs_Delay_from_due_date": {
+                "reference_correlation": -0.2501626132234796,
+                "current_correlation": -0.0008858148459899744,
+                "absolute_change": 0.24927679837748962
+            },
+            "Annual_Income_vs_Num_of_Delayed_Payment": {
+                "reference_correlation": -0.28605639990845755,
+                "current_correlation": 0.0014200975182276578,
+                "absolute_change": 0.2874764974266852
+            },
+            "Annual_Income_vs_Changed_Credit_Limit": {
+                "reference_correlation": -0.1753544708019852,
+                "current_correlation": 9.408916886299188e-05,
+                "absolute_change": 0.1754485599708482
+            },
+            "Annual_Income_vs_Num_Credit_Inquiries": {
+                "reference_correlation": -0.28082491666856646,
+                "current_correlation": 0.0020777838242056115,
+                "absolute_change": 0.28290270049277205
+            },
+            "Annual_Income_vs_Outstanding_Debt": {
+                "reference_correlation": -0.2693193396291027,
+                "current_correlation": -0.0025681755272574484,
+                "absolute_change": 0.26675116410184524
+            },
+            "Annual_Income_vs_Credit_Utilization_Ratio": {
+                "reference_correlation": 0.17593008480181643,
+                "current_correlation": 0.001056380282896771,
+                "absolute_change": 0.17487370451891965
+            },
+            "Annual_Income_vs_Credit_History_Age": {
+                "reference_correlation": 0.27237744206174686,
+                "current_correlation": 0.0023031434441987647,
+                "absolute_change": 0.2700742986175481
+            },
+            "Annual_Income_vs_Total_EMI_per_month": {
+                "reference_correlation": 0.3898631733703946,
+                "current_correlation": -0.0015660849641654366,
+                "absolute_change": 0.39142925833456005
+            },
+            "Annual_Income_vs_Monthly_Balance": {
+                "reference_correlation": 0.7055277563106512,
+                "current_correlation": -0.000537473679699041,
+                "absolute_change": 0.7060652299903503
+            },
+            "Monthly_Inhand_Salary_vs_Num_Bank_Accounts": {
+                "reference_correlation": -0.2832542908670351,
+                "current_correlation": 0.0021575985552169438,
+                "absolute_change": 0.28541188942225204
+            },
+            "Monthly_Inhand_Salary_vs_Num_Credit_Card": {
+                "reference_correlation": -0.21694508885598862,
+                "current_correlation": 0.0007046580059044406,
+                "absolute_change": 0.21764974686189306
+            },
+            "Monthly_Inhand_Salary_vs_Num_of_Loan": {
+                "reference_correlation": -0.25440563275986017,
+                "current_correlation": 0.004237931905010619,
+                "absolute_change": 0.25864356466487076
+            },
+            "Monthly_Inhand_Salary_vs_Num_of_Delayed_Payment": {
+                "reference_correlation": -0.28514337035768783,
+                "current_correlation": 0.0011437345473152098,
+                "absolute_change": 0.28628710490500303
+            },
+            "Monthly_Inhand_Salary_vs_Num_Credit_Inquiries": {
+                "reference_correlation": -0.2804296215047541,
+                "current_correlation": -0.0014706672803921524,
+                "absolute_change": 0.27895895422436195
+            },
+            "Monthly_Inhand_Salary_vs_Outstanding_Debt": {
+                "reference_correlation": -0.26907838322334376,
+                "current_correlation": -0.007867631942540712,
+                "absolute_change": 0.26121075128080307
+            },
+            "Monthly_Inhand_Salary_vs_Total_EMI_per_month": {
+                "reference_correlation": 0.38837694556466223,
+                "current_correlation": 0.005520825103357288,
+                "absolute_change": 0.38285612046130496
+            },
+            "Num_Bank_Accounts_vs_Num_Credit_Card": {
+                "reference_correlation": 0.442682385116197,
+                "current_correlation": 0.0015753528552828135,
+                "absolute_change": 0.4411070322609142
+            },
+            "Num_Bank_Accounts_vs_Num_of_Loan": {
+                "reference_correlation": 0.47248337395211104,
+                "current_correlation": -0.001072609858446963,
+                "absolute_change": 0.473555983810558
+            },
+            "Num_Bank_Accounts_vs_Num_of_Delayed_Payment": {
+                "reference_correlation": 0.6013749163108946,
+                "current_correlation": 0.010282589819771046,
+                "absolute_change": 0.5910923264911235
+            },
+            "Num_Bank_Accounts_vs_Num_Credit_Inquiries": {
+                "reference_correlation": 0.5193312762991739,
+                "current_correlation": 0.0006659553756177604,
+                "absolute_change": 0.5186653209235561
+            },
+            "Num_Bank_Accounts_vs_Outstanding_Debt": {
+                "reference_correlation": 0.5070450262805859,
+                "current_correlation": 0.0023276805399626128,
+                "absolute_change": 0.5047173457406233
+            },
+            "Num_Credit_Card_vs_Num_of_Loan": {
+                "reference_correlation": 0.4179651717614363,
+                "current_correlation": -0.00023930138905152505,
+                "absolute_change": 0.41820447315048787
+            },
+            "Num_Credit_Card_vs_Num_of_Delayed_Payment": {
+                "reference_correlation": 0.42356052767586627,
+                "current_correlation": -0.0017087291881804827,
+                "absolute_change": 0.42526925686404676
+            },
+            "Num_Credit_Card_vs_Num_Credit_Inquiries": {
+                "reference_correlation": 0.4602083727309195,
+                "current_correlation": 0.0009547379591022882,
+                "absolute_change": 0.45925363477181724
+            },
+            "Num_Credit_Card_vs_Outstanding_Debt": {
+                "reference_correlation": 0.49036153791839504,
+                "current_correlation": 0.006244991555330278,
+                "absolute_change": 0.4841165463630648
+            },
+            "Num_Credit_Card_vs_Total_EMI_per_month": {
+                "reference_correlation": 0.1051108257335483,
+                "current_correlation": -0.00103880663103352,
+                "absolute_change": 0.10614963236458182
+            },
+            "Interest_Rate_vs_Monthly_Inhand_Salary": {
+                "reference_correlation": -0.3019069985380108,
+                "current_correlation": 0.004547761770224828,
+                "absolute_change": 0.3064547603082356
+            },
+            "Interest_Rate_vs_Num_Bank_Accounts": {
+                "reference_correlation": 0.5842967909400849,
+                "current_correlation": -0.0037939505061212633,
+                "absolute_change": 0.5880907414462062
+            },
+            "Interest_Rate_vs_Num_Credit_Card": {
+                "reference_correlation": 0.49791225439902964,
+                "current_correlation": 0.005282122183790387,
+                "absolute_change": 0.49263013221523927
+            },
+            "Interest_Rate_vs_Num_of_Loan": {
+                "reference_correlation": 0.559156230000689,
+                "current_correlation": 0.002493443290355474,
+                "absolute_change": 0.5566627867103335
+            },
+            "Interest_Rate_vs_Num_of_Delayed_Payment": {
+                "reference_correlation": 0.571416284467442,
+                "current_correlation": 0.0077113736694853765,
+                "absolute_change": 0.5637049107979566
+            },
+            "Interest_Rate_vs_Num_Credit_Inquiries": {
+                "reference_correlation": 0.6335193640088884,
+                "current_correlation": 0.002620199919465296,
+                "absolute_change": 0.6308991640894231
+            },
+            "Interest_Rate_vs_Outstanding_Debt": {
+                "reference_correlation": 0.6294144464105897,
+                "current_correlation": 0.001953294795762875,
+                "absolute_change": 0.6274611516148269
+            },
+            "Interest_Rate_vs_Total_EMI_per_month": {
+                "reference_correlation": 0.13407170746020064,
+                "current_correlation": 0.005947771144394828,
+                "absolute_change": 0.12812393631580582
+            },
+            "Interest_Rate_vs_Monthly_Balance": {
+                "reference_correlation": -0.3288446245897641,
+                "current_correlation": 0.005892746641582979,
+                "absolute_change": 0.33473737123134706
+            },
+            "Num_of_Loan_vs_Outstanding_Debt": {
+                "reference_correlation": 0.6387126428488414,
+                "current_correlation": 0.000396569558816825,
+                "absolute_change": 0.6383160732900246
+            },
+            "Num_of_Loan_vs_Total_EMI_per_month": {
+                "reference_correlation": 0.4320645142494571,
+                "current_correlation": 0.003035430654440776,
+                "absolute_change": 0.4290290835950163
+            },
+            "Delay_from_due_date_vs_Monthly_Inhand_Salary": {
+                "reference_correlation": -0.24955459145581432,
+                "current_correlation": -0.005888223451961521,
+                "absolute_change": 0.2436663680038528
+            },
+            "Delay_from_due_date_vs_Num_Bank_Accounts": {
+                "reference_correlation": 0.5602763992575416,
+                "current_correlation": 0.0011836752901836158,
+                "absolute_change": 0.559092723967358
+            },
+            "Delay_from_due_date_vs_Num_Credit_Card": {
+                "reference_correlation": 0.4795745454040126,
+                "current_correlation": -0.0011787479704132267,
+                "absolute_change": 0.48075329337442585
+            },
+            "Delay_from_due_date_vs_Interest_Rate": {
+                "reference_correlation": 0.5890878329759475,
+                "current_correlation": 0.004011866972143512,
+                "absolute_change": 0.585075966003804
+            },
+            "Delay_from_due_date_vs_Num_of_Loan": {
+                "reference_correlation": 0.5012432647127578,
+                "current_correlation": -0.0011880516855631768,
+                "absolute_change": 0.502431316398321
+            },
+            "Delay_from_due_date_vs_Num_of_Delayed_Payment": {
+                "reference_correlation": 0.5422375775454029,
+                "current_correlation": 0.006707136497201735,
+                "absolute_change": 0.5355304410482011
+            },
+            "Delay_from_due_date_vs_Num_Credit_Inquiries": {
+                "reference_correlation": 0.5407855304650491,
+                "current_correlation": 0.0010806874106696585,
+                "absolute_change": 0.5397048430543794
+            },
+            "Delay_from_due_date_vs_Outstanding_Debt": {
+                "reference_correlation": 0.571712833564093,
+                "current_correlation": -0.002858613147604217,
+                "absolute_change": 0.5745714467116972
+            },
+            "Delay_from_due_date_vs_Total_EMI_per_month": {
+                "reference_correlation": 0.13850445113095244,
+                "current_correlation": -0.004983644049880314,
+                "absolute_change": 0.14348809518083275
+            },
+            "Delay_from_due_date_vs_Monthly_Balance": {
+                "reference_correlation": -0.2819329651943264,
+                "current_correlation": 0.0006793778257545492,
+                "absolute_change": 0.282612343020081
+            },
+            "Num_of_Delayed_Payment_vs_Num_of_Loan": {
+                "reference_correlation": 0.47461801792691266,
+                "current_correlation": 0.002267715680192614,
+                "absolute_change": 0.47235030224672003
+            },
+            "Num_of_Delayed_Payment_vs_Outstanding_Debt": {
+                "reference_correlation": 0.5048743347705461,
+                "current_correlation": -0.00285512551689579,
+                "absolute_change": 0.5077294602874419
+            },
+            "Num_of_Delayed_Payment_vs_Total_EMI_per_month": {
+                "reference_correlation": 0.11052186980021693,
+                "current_correlation": 0.0013424920955454201,
+                "absolute_change": 0.10917937770467151
+            },
+            "Changed_Credit_Limit_vs_Monthly_Inhand_Salary": {
+                "reference_correlation": -0.17530803453204158,
+                "current_correlation": 0.0026096808543174515,
+                "absolute_change": 0.17791771538635903
+            },
+            "Changed_Credit_Limit_vs_Num_Bank_Accounts": {
+                "reference_correlation": 0.3313533868795425,
+                "current_correlation": -0.0011947344239394502,
+                "absolute_change": 0.332548121303482
+            },
+            "Changed_Credit_Limit_vs_Num_Credit_Card": {
+                "reference_correlation": 0.25321539187468295,
+                "current_correlation": 0.003181758386557144,
+                "absolute_change": 0.2500336334881258
+            },
+            "Changed_Credit_Limit_vs_Interest_Rate": {
+                "reference_correlation": 0.36694287571265705,
+                "current_correlation": 0.002461914771501162,
+                "absolute_change": 0.3644809609411559
+            },
+            "Changed_Credit_Limit_vs_Num_of_Loan": {
+                "reference_correlation": 0.3703802748571098,
+                "current_correlation": 0.0016794363682793524,
+                "absolute_change": 0.36870083848883045
+            },
+            "Changed_Credit_Limit_vs_Delay_from_due_date": {
+                "reference_correlation": 0.29371895106264245,
+                "current_correlation": -0.0010089486240059103,
+                "absolute_change": 0.29472789968664836
+            },
+            "Changed_Credit_Limit_vs_Num_of_Delayed_Payment": {
+                "reference_correlation": 0.326109289218968,
+                "current_correlation": -0.003166552070078952,
+                "absolute_change": 0.3292758412890469
+            },
+            "Changed_Credit_Limit_vs_Num_Credit_Inquiries": {
+                "reference_correlation": 0.38025389936352044,
+                "current_correlation": -0.0030833773491451776,
+                "absolute_change": 0.3833372767126656
+            },
+            "Changed_Credit_Limit_vs_Outstanding_Debt": {
+                "reference_correlation": 0.45887197381852407,
+                "current_correlation": 0.0005742623298734637,
+                "absolute_change": 0.4582977114886506
+            },
+            "Changed_Credit_Limit_vs_Credit_History_Age": {
+                "reference_correlation": -0.4251642605979839,
+                "current_correlation": 0.005236492427936481,
+                "absolute_change": 0.4304007530259204
+            },
+            "Changed_Credit_Limit_vs_Monthly_Balance": {
+                "reference_correlation": -0.2053661543001454,
+                "current_correlation": -7.833381244050278e-05,
+                "absolute_change": 0.20528782048770491
+            },
+            "Num_Credit_Inquiries_vs_Num_of_Loan": {
+                "reference_correlation": 0.5661490322330577,
+                "current_correlation": 0.0008896997047172903,
+                "absolute_change": 0.5652593325283404
+            },
+            "Num_Credit_Inquiries_vs_Num_of_Delayed_Payment": {
+                "reference_correlation": 0.5007269354011638,
+                "current_correlation": -0.0004837319049456845,
+                "absolute_change": 0.5012106673061094
+            },
+            "Num_Credit_Inquiries_vs_Outstanding_Debt": {
+                "reference_correlation": 0.5980139388210849,
+                "current_correlation": 0.000943754388802971,
+                "absolute_change": 0.5970701844322819
+            },
+            "Num_Credit_Inquiries_vs_Total_EMI_per_month": {
+                "reference_correlation": 0.1545127062163829,
+                "current_correlation": -0.003537328297608508,
+                "absolute_change": 0.1580500345139914
+            },
+            "Outstanding_Debt_vs_Total_EMI_per_month": {
+                "reference_correlation": 0.1655061679887051,
+                "current_correlation": -0.001029903361470426,
+                "absolute_change": 0.16653607135017554
+            },
+            "Credit_Utilization_Ratio_vs_Monthly_Inhand_Salary": {
+                "reference_correlation": 0.17608056298578925,
+                "current_correlation": -0.002477112090399823,
+                "absolute_change": 0.17855767507618908
+            },
+            "Credit_Utilization_Ratio_vs_Num_of_Loan": {
+                "reference_correlation": -0.10046917340954392,
+                "current_correlation": 0.0006278179796160553,
+                "absolute_change": 0.10109699138915998
+            },
+            "Credit_Utilization_Ratio_vs_Monthly_Balance": {
+                "reference_correlation": 0.24516419367938408,
+                "current_correlation": 0.008145646282394165,
+                "absolute_change": 0.2370185473969899
+            },
+            "Credit_History_Age_vs_Monthly_Inhand_Salary": {
+                "reference_correlation": 0.2715092376114122,
+                "current_correlation": -0.0007838099902055361,
+                "absolute_change": 0.27229304760161777
+            },
+            "Credit_History_Age_vs_Num_Bank_Accounts": {
+                "reference_correlation": -0.4853321802979578,
+                "current_correlation": -0.0029481785522254313,
+                "absolute_change": 0.48238400174573237
+            },
+            "Credit_History_Age_vs_Num_Credit_Card": {
+                "reference_correlation": -0.4172234130026102,
+                "current_correlation": 0.003466713817552232,
+                "absolute_change": 0.42069012682016244
+            },
+            "Credit_History_Age_vs_Interest_Rate": {
+                "reference_correlation": -0.5762260836597418,
+                "current_correlation": -0.0012080902652657054,
+                "absolute_change": 0.5750179933944761
+            },
+            "Credit_History_Age_vs_Num_of_Loan": {
+                "reference_correlation": -0.6057249244895322,
+                "current_correlation": 0.0002739457088091932,
+                "absolute_change": 0.6059988701983414
+            },
+            "Credit_History_Age_vs_Delay_from_due_date": {
+                "reference_correlation": -0.49118321005103793,
+                "current_correlation": -0.0017394500332832145,
+                "absolute_change": 0.4894437600177547
+            },
+            "Credit_History_Age_vs_Num_of_Delayed_Payment": {
+                "reference_correlation": -0.48219707684790447,
+                "current_correlation": 0.001740681316141638,
+                "absolute_change": 0.4839377581640461
+            },
+            "Credit_History_Age_vs_Num_Credit_Inquiries": {
+                "reference_correlation": -0.6106550155297363,
+                "current_correlation": -0.003355110022243477,
+                "absolute_change": 0.6072999055074929
+            },
+            "Credit_History_Age_vs_Outstanding_Debt": {
+                "reference_correlation": -0.6293173262135653,
+                "current_correlation": -0.0008675632025627418,
+                "absolute_change": 0.6284497630110025
+            },
+            "Credit_History_Age_vs_Total_EMI_per_month": {
+                "reference_correlation": -0.17181036758167384,
+                "current_correlation": -0.0006273020009385493,
+                "absolute_change": 0.1711830655807353
+            },
+            "Credit_History_Age_vs_Monthly_Balance": {
+                "reference_correlation": 0.3257627491807647,
+                "current_correlation": 0.001761850361068563,
+                "absolute_change": 0.3240008988196961
+            },
+            "Amount_invested_monthly_vs_Annual_Income": {
+                "reference_correlation": 0.6274419390756262,
+                "current_correlation": 0.0004097869080541274,
+                "absolute_change": 0.627032152167572
+            },
+            "Amount_invested_monthly_vs_Monthly_Inhand_Salary": {
+                "reference_correlation": 0.6281072513059021,
+                "current_correlation": -0.0005541619371095915,
+                "absolute_change": 0.6286614132430116
+            },
+            "Amount_invested_monthly_vs_Num_Bank_Accounts": {
+                "reference_correlation": -0.18220930181332573,
+                "current_correlation": -5.662371969687762e-05,
+                "absolute_change": 0.18215267809362884
+            },
+            "Amount_invested_monthly_vs_Num_Credit_Card": {
+                "reference_correlation": -0.14299994966549026,
+                "current_correlation": 0.0013182554349399319,
+                "absolute_change": 0.1443182051004302
+            },
+            "Amount_invested_monthly_vs_Interest_Rate": {
+                "reference_correlation": -0.19495667087030621,
+                "current_correlation": 0.0013908080668870548,
+                "absolute_change": 0.19634747893719326
+            },
+            "Amount_invested_monthly_vs_Num_of_Loan": {
+                "reference_correlation": -0.16442274715175575,
+                "current_correlation": -0.0026113880704983533,
+                "absolute_change": 0.1618113590812574
+            },
+            "Amount_invested_monthly_vs_Delay_from_due_date": {
+                "reference_correlation": -0.16254256484339547,
+                "current_correlation": 0.007359158406662569,
+                "absolute_change": 0.16990172325005803
+            },
+            "Amount_invested_monthly_vs_Num_of_Delayed_Payment": {
+                "reference_correlation": -0.1826502354435762,
+                "current_correlation": -0.002997521727643868,
+                "absolute_change": 0.17965271371593233
+            },
+            "Amount_invested_monthly_vs_Changed_Credit_Limit": {
+                "reference_correlation": -0.11515455286088976,
+                "current_correlation": -0.0037940434821147682,
+                "absolute_change": 0.111360509378775
+            },
+            "Amount_invested_monthly_vs_Num_Credit_Inquiries": {
+                "reference_correlation": -0.17647058813107816,
+                "current_correlation": -0.000977964391078011,
+                "absolute_change": 0.17549262374000016
+            },
+            "Amount_invested_monthly_vs_Outstanding_Debt": {
+                "reference_correlation": -0.1738130388172578,
+                "current_correlation": 0.0004210526646119025,
+                "absolute_change": 0.1742340914818697
+            },
+            "Amount_invested_monthly_vs_Credit_History_Age": {
+                "reference_correlation": 0.17574460291236463,
+                "current_correlation": 0.0015242937189303167,
+                "absolute_change": 0.17422030919343431
+            },
+            "Amount_invested_monthly_vs_Total_EMI_per_month": {
+                "reference_correlation": 0.24191312721907723,
+                "current_correlation": 0.0014157883289074014,
+                "absolute_change": 0.24049733889016983
+            },
+            "Monthly_Balance_vs_Monthly_Inhand_Salary": {
+                "reference_correlation": 0.7067413787595809,
+                "current_correlation": 0.002773358123421185,
+                "absolute_change": 0.7039680206361597
+            },
+            "Monthly_Balance_vs_Num_Bank_Accounts": {
+                "reference_correlation": -0.3004480881042898,
+                "current_correlation": 0.0008481679731805255,
+                "absolute_change": 0.30129625607747035
+            },
+            "Monthly_Balance_vs_Num_Credit_Card": {
+                "reference_correlation": -0.2387179507827475,
+                "current_correlation": -0.005335031254895496,
+                "absolute_change": 0.233382919527852
+            },
+            "Monthly_Balance_vs_Num_of_Loan": {
+                "reference_correlation": -0.4337438907687599,
+                "current_correlation": 0.0017872955092918493,
+                "absolute_change": 0.43553118627805176
+            },
+            "Monthly_Balance_vs_Num_of_Delayed_Payment": {
+                "reference_correlation": -0.3052631998339,
+                "current_correlation": 0.001576160874259716,
+                "absolute_change": 0.3068393607081597
+            },
+            "Monthly_Balance_vs_Num_Credit_Inquiries": {
+                "reference_correlation": -0.32227175387104023,
+                "current_correlation": 0.0013197319794324357,
+                "absolute_change": 0.32359148585047265
+            },
+            "Monthly_Balance_vs_Outstanding_Debt": {
+                "reference_correlation": -0.3171739543351068,
+                "current_correlation": 0.0008917754088721683,
+                "absolute_change": 0.31806572974397895
+            }
+        }
+    }
+}
